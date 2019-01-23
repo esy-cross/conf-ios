@@ -1,0 +1,14 @@
+{
+  "name": "conf-ios",
+  "version": "0.0.1",
+  "dependencies": {
+    "@esy-ocaml/substs": "*"
+  },
+  "esy": {
+    "build": [
+      ["sh", "./configure.sh"],
+      ["cp", "./ios.config", "$cur__etc/ios.config"]
+    ],
+    "buildsInSource": true
+  }
+}
